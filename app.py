@@ -73,7 +73,10 @@ def bar_chart():
         return redirect('/scrape')
     
     # Create minimal, aesthetic bar chart
-    plt.style.use('seaborn-v0_8-whitegrid')
+    try:
+        plt.style.use('seaborn-v0_8-whitegrid')
+    except:
+        plt.style.use('default')
     fig, ax = plt.subplots(figsize=(16, 10))
     fig.patch.set_facecolor('#000000')
     ax.set_facecolor('#000000')
