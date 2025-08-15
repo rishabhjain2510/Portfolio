@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<div class="page-section">
+    <div class="container">
+        <h1 class="page-title">About Me</h1>
+        
+        <div class="content-card">
+            
+            <!-- Professional Summary with Profile Photo -->
+            <div class="about-section profile-section">
+                <h2>Who I Am</h2>
+                <div class="profile-content">
+                    <div class="profile-photo-container">
+                        <img src="{{ url_for('static', filename='images/profile-photo.png') }}" alt="Rishabh Dev Jain" class="profile-photo">
+                    </div>
+                    <div class="profile-text">
+                        <p>I'm Rishabh Dev Jain — a biotechnology student with a knack for turning raw data into actionable insights. I bridge science and tech, combining data analytics, machine learning, and web development to create tools that solve real problems. I believe in mixing curiosity with execution — because ideas only matter when they're built. I'm equally at home debugging code at midnight or deep-diving into research papers with a coffee in hand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills & Focus -->
+            <div class="about-section">
+                <h2>What I Do</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Data Analytics</h3>
+                        <p>Python, Pandas, NumPy, SQL, Power BI</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <p>Predictive Modeling & AI-driven Insights</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, Flask</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Bioinformatics</h3>
+                        <p>Biopython, BLAST</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Goals -->
+            <div class="about-section">
+                <h2>What I'm Working On</h2>
+                <p>Right now, I'm developing projects that bridge AI, bioinformatics, and data analytics — from DNA sequence analysis tools to AI-powered dashboards. Alongside that, I'm refining my skills in Python, SQL, Power BI, and machine learning while exploring personalized medicine and predictive analytics. My goal? To build tools that make complex data insightful, actionable, and impactful.</p>
+            </div>
+
+            <!-- Personal Touch -->
+            <div class="about-section">
+                <h2>Beyond the Code</h2>
+                <p>When I'm not coding or studying, you'll probably find me at the gym chasing the perfect lift, watching Formula 1 races, diving into anime marathons, or experimenting in the kitchen. I believe in lifelong learning, staying curious, and keeping a sense of humor no matter how complex the challenge.</p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="about-section cta-section">
+                <h2>Let's Connect!</h2>
+                <p>If you're passionate about data, tech, or just love discussing innovative ideas over coffee, let's connect!</p>
+                <div class="connect-links">
+                    <a href="mailto:your.email@example.com" class="connect-btn">Email Me</a>
+                    <a href="https://linkedin.com/in/yourprofile" class="connect-btn secondary" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/yourprofile" class="connect-btn secondary" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

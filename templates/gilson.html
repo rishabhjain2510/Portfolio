@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Gilson Pipettes Data{% endblock %}
+
+{% block content %}
+<section class="data-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Gilson Pipettes Dataset</h1>
+            <p class="section-subtitle">Professional laboratory equipment data analysis</p>
+        </div>
+
+        <div class="data-controls">
+            <a href="{{ url_for('export_gilson_csv') }}" class="data-btn export">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                Export CSV
+            </a>
+            <a href="/web_scraping" class="data-btn secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                </svg>
+                Back to Web Scraping
+            </a>
+        </div>
+
+        {% if tables %}
+        <div class="data-table-container">
+            <div class="table-wrapper">
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <div class="no-data">
+            <h3>No Data Available</h3>
+            <p>Gilson Pipettes CSV file not found</p>
+        </div>
+        {% endif %}
+
+        <div class="project-info">
+            <h3>About Gilson Pipettes Dataset</h3>
+            <p>This dataset contains information about Gilson pipettes, including specifications, prices, and technical details for laboratory equipment analysis.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

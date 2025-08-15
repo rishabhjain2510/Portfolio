@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}CodroidHub - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<div class="page-section">
+    <div class="container">
+        
+        
+        <!-- CodroidHub Logo -->
+        <div class="codroidhub-page-logo">
+            <div class="codroidhub-logo-container">
+                <div class="logo-text">
+                    <span class="logo-codroid">Codroid</span><span class="logo-hub">Hub</span>
+                </div>
+                <div class="logo-tagline">Introspect | Initiate | Innovate</div>
+            </div>
+        </div>
+        
+        <!-- About CodroidHub Section -->
+        <div class="content-card">
+            <div class="about-section">
+                <h2>About CodroidHub</h2>
+                <p>CodroidHub Pvt. Ltd. is an e-learning and innovation hub that empowers learners through hands-on tech education. With the belief that the right guidance can help anyone change the world with technology, CodroidHub blends coding, AI, web development, and real-world projects into an immersive learning experience. From summer training and workshops to webinars and industry partnerships, it's a place where curiosity meets creation.</p>
+            </div>
+
+            <!-- Key Highlights Section -->
+            <div class="about-section">
+                <h2>Key Highlights</h2>
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎯</div>
+                        <h3>Mission & Vision</h3>
+                        <p>Inspiring people to transform the world with technology through guidance, creativity, and collaboration.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🚀</div>
+                        <h3>Learning Ecosystem</h3>
+                        <p>Practical training programs, events, and workshops designed to turn skills into real-world projects.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🤝</div>
+                        <h3>Community Spirit</h3>
+                        <p>A space driven by passion, teamwork, and a willingness to do things differently.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🏢</div>
+                        <h3>Industry Partnerships</h3>
+                        <p>Collaborations with academic and industry leaders, including Nepal College of Information Technology (NCIT), to strengthen innovation pipelines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Experience Section -->
+            <div class="about-section cta-section">
+                <h2>My Experience with CodroidHub</h2>
+                <p>I'm currently part of CodroidHub's Data Analytics Program, a job-oriented training designed to turn technical skills into real-world solutions. The program blends Python, SQL, Power BI, Machine Learning, and Cloud Computing with a strong emphasis on hands-on, project-based learning — making every concept immediately applicable.</p>
+                
+                <p>I'm currently working on a DNA Sequence Analysis Toolkit — a bioinformatics pipeline that processes raw genetic sequences, cleans and analyzes the data, visualizes meaningful patterns, and applies machine learning models to detect potential genetic markers and predict biological traits. This toolkit streamlines the process from raw DNA input to actionable research insights, offering real value in bioinformatics and life sciences.</p>
+                
+                <p>This journey is more than skill-building — it's training me to think end-to-end, from data collection to deployment, and giving me the confidence to create data-driven solutions that make a tangible impact in healthcare, genetics, and scientific research.</p>
+                
+                <div class="connect-links">
+                    <a href="https://www.linkedin.com/company/codroidhub/" target="_blank" class="connect-btn">Explore CodroidHub</a>
+                    <a href="{{ url_for('projects') }}" class="connect-btn secondary">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

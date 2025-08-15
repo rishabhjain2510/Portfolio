@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="content-card">
+            <div class="intro-section">
+                <h1 class="page-title">Macromolecular Structures: Trends, Techniques, and Properties</h1>
+                <p class="hook-text">Interactive Power BI dashboard showcasing comprehensive analysis of protein structures and molecular research data</p>
+            </div>
+            
+            <!-- Dashboard Image -->
+            <div class="dashboard-showcase">
+                <div class="dashboard-image-container">
+                    <img src="{{ url_for('static', filename='images/macromolecular-structures.png') }}" 
+                         alt="Macromolecular Structures Power BI Dashboard" 
+                         class="dashboard-image"
+                         loading="lazy">
+                </div>
+            </div>
+
+            <!-- Dashboard Overview -->
+            <div class="dashboard-overview">
+                <h2>Dashboard Overview</h2>
+                <p class="overview-text">
+                    This comprehensive Power BI dashboard analyzes macromolecular structures, experimental techniques, and molecular properties from a dataset of over 86,000 protein structures. The visualization provides insights into research trends, experimental methodology popularity, and molecular characteristics across different structural types and pH ranges.
+                </p>
+            </div>
+
+            <!-- Key Visualizations -->
+            <div class="dashboard-features">
+                <div class="feature-section">
+                    <h3>Key Visualizations</h3>
+                    <div class="visualization-grid">
+                        <div class="viz-item">
+                            <h4>📊 Structure Classification Analysis</h4>
+                            <p>Bar chart showing distribution across protein types including Hydrolase, Transferase, Oxidoreductase, Lyase, and other enzyme classifications with detailed count analysis.</p>
+                        </div>
+                        
+                        <div class="viz-item">
+                            <h4>🥧 Experimental Techniques Popularity</h4>
+                            <p>Pie chart displaying the dominance of X-Ray Diffraction (99.8%) alongside other experimental methods like Neutron Diffraction and Electron Crystallography.</p>
+                        </div>
+                        
+                        <div class="viz-item">
+                            <h4>📈 Yearly Growth of Structures</h4>
+                            <p>Line chart tracking the exponential growth of structural discoveries from 1980-2020, with peak research activity identified around 2010-2015.</p>
+                        </div>
+                        
+                        <div class="viz-item">
+                            <h4>🔬 Density vs Resolution Analysis</h4>
+                            <p>Scatter plot analyzing the relationship between structural density and resolution quality, revealing patterns in experimental precision and molecular characteristics.</p>
+                        </div>
+                        
+                        <div class="viz-item">
+                            <h4>🧬 Macromolecule Type Over Time</h4>
+                            <p>Area chart showing the evolution of different molecular types (DNA, DNA/DNA, DNA/RNA, DNA/RNA) in structural research over the decades.</p>
+                        </div>
+                        
+                        <div class="viz-item">
+                            <h4>⚗️ pH Range Distribution</h4>
+                            <p>Donut chart analyzing pH range groups from acidic (4.6) to basic (8.5), revealing molecular stability patterns and experimental conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Insights -->
+            <div class="data-insights">
+                <h3>Key Data Insights</h3>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-number">86.72K</div>
+                        <div class="insight-label">Total Structures Analyzed</div>
+                        <div class="insight-description">Comprehensive dataset with detailed metadata</div>
+                    </div>
+                    
+                    <div class="insight-card">
+                        <div class="insight-number">99.8%</div>
+                        <div class="insight-label">X-Ray Diffraction Usage</div>
+                        <div class="insight-description">Dominant experimental technique</div>
+                    </div>
+                    
+                    <div class="insight-card">
+                        <div class="insight-number">2010-2015</div>
+                        <div class="insight-label">Peak Research Period</div>
+                        <div class="insight-description">Highest structural discovery activity</div>
+                    </div>
+                    
+                    <div class="insight-card">
+                        <div class="insight-number">12</div>
+                        <div class="insight-label">Protein Classifications</div>
+                        <div class="insight-description">Major enzyme and protein categories</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="technical-details">
+                <h3>Technical Implementation</h3>
+                <div class="tech-summary">
+                    <div class="tech-category">
+                        <h4>Power BI Features</h4>
+                        <ul>
+                            <li>Advanced DAX calculations for trend analysis</li>
+                            <li>Complex data modeling with multiple relationships</li>
+                            <li>Interactive filtering and drill-down capabilities</li>
+                            <li>Custom color schemes for scientific data</li>
+                            <li>Responsive dashboard layout optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h4>Data Processing</h4>
+                        <ul>
+                            <li>ETL processes for protein database integration</li>
+                            <li>Data quality validation and cleansing</li>
+                            <li>Hierarchical data structure implementation</li>
+                            <li>Time series data optimization</li>
+                            <li>Performance tuning for large datasets</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h4>Scientific Applications</h4>
+                        <ul>
+                            <li>Structural biology research insights</li>
+                            <li>Experimental technique trend analysis</li>
+                            <li>Molecular property correlation studies</li>
+                            <li>Research timeline visualization</li>
+                            <li>pH stability pattern identification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Tags -->
+            <div class="project-tags-section">
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Microsoft Power BI</span>
+                    <span class="tech-tag">DAX Functions</span>
+                    <span class="tech-tag">Data Modeling</span>
+                    <span class="tech-tag">ETL Processes</span>
+                    <span class="tech-tag">Structural Biology</span>
+                    <span class="tech-tag">Scientific Visualization</span>
+                    <span class="tech-tag">Interactive Dashboards</span>
+                    <span class="tech-tag">Time Series Analysis</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="dashboard-navigation">
+                <div class="nav-buttons">
+                    <a href="/macromolecular" class="nav-btn secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.42-1.41L7.83 13H20v-2z"/>
+                        </svg>
+                        Back to Power BI Projects
+                    </a>
+                    <a href="/services" class="nav-btn primary">Explore Other Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

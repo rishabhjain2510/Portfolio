@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Gaming Mouse Dataset{% endblock %}
+
+{% block content %}
+<section class="data-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Gaming Mouse Dataset</h1>
+            <p class="section-subtitle">Comprehensive gaming mouse specifications and analysis</p>
+        </div>
+
+        <div class="data-controls">
+            <a href="{{ url_for('export_mouse_csv') }}" class="data-btn export">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                Export CSV
+            </a>
+            <a href="{{ url_for('gaming_laptop') }}" class="data-btn secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"/>
+                </svg>
+                Gaming Laptops
+            </a>
+            <a href="/web_scraping" class="data-btn primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                </svg>
+                Back to Web Scraping
+            </a>
+        </div>
+
+        {% if tables %}
+        <div class="data-table-container">
+            <div class="table-wrapper">
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <div class="no-data">
+            <h3>No Data Available</h3>
+            <p>Gaming Mouse CSV file not found</p>
+        </div>
+        {% endif %}
+
+        <div class="project-info">
+            <h3>About Gaming Mouse Dataset</h3>
+            <p>This dataset contains detailed specifications of gaming mice including DPI, sensor types, ergonomics, and pricing information for market analysis.</p>
+            <ul>
+                <li>Performance specifications (DPI, polling rate)</li>
+                <li>Ergonomic features and design</li>
+                <li>Price comparison and market trends</li>
+                <li>Brand and model classifications</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

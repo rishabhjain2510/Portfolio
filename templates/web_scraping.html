@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="content-card">
+            <div class="intro-section">
+                <h1 class="page-title">Web Scraping Projects</h1>
+                <p class="hook-text">Data extraction and web automation projects showcasing various scraping techniques and real-world applications</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Books to Scrape</h3>
+                        <div class="project-status">Active</div>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive web scraping project that extracts book information including titles, prices, and availability from the Books to Scrape website. Features data visualization with bar and pie charts.
+                    </p>
+                    <div class="project-features">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="/scrape" class="project-btn primary">View Data</a>
+                        <a href="/bar" class="project-btn secondary">Bar Chart</a>
+                        <a href="/pie" class="project-btn secondary">Pie Chart</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Gilson Pipettes</h3>
+                        <div class="project-status">Completed</div>
+                    </div>
+                    <p class="project-description">
+                        Scientific equipment data scraping project focused on extracting Gilson pipette specifications, pricing, and technical details. Includes comprehensive data analysis and CSV export functionality.
+                    </p>
+                    <div class="project-features">
+                        <span class="tech-tag">Web Scraping</span>
+                        <span class="tech-tag">Data Processing</span>
+                        <span class="tech-tag">CSV Export</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="/gilson" class="project-btn primary">View Data</a>
+                        <a href="/export_gilson_csv" class="project-btn secondary">Download CSV</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Gaming Mouse Dataset</h3>
+                        <div class="project-status">Completed</div>
+                    </div>
+                    <p class="project-description">
+                        Comprehensive gaming mouse dataset containing specifications, prices, and technical details from various manufacturers. Features detailed analysis and comparison tools for hardware research.
+                    </p>
+                    <div class="project-features">
+                        <span class="tech-tag">Dataset Analysis</span>
+                        <span class="tech-tag">Product Comparison</span>
+                        <span class="tech-tag">Specifications</span>
+                        <span class="tech-tag">Market Research</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="/gaming_mouse" class="project-btn primary">View Data</a>
+                        <a href="/export_mouse_csv" class="project-btn secondary">Download CSV</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Gaming Laptop Dataset</h3>
+                        <div class="project-status">Completed</div>
+                    </div>
+                    <p class="project-description">
+                        Extensive gaming laptop dataset featuring CPU, GPU, RAM specifications, performance benchmarks, display characteristics, and pricing information for comprehensive hardware analysis.
+                    </p>
+                    <div class="project-features">
+                        <span class="tech-tag">Hardware Analysis</span>
+                        <span class="tech-tag">Performance Data</span>
+                        <span class="tech-tag">Benchmarking</span>
+                        <span class="tech-tag">Specifications</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="/gaming_laptop" class="project-btn primary">View Data</a>
+                        <a href="/export_laptop_csv" class="project-btn secondary">Download CSV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-summary">
+                <h2>Project Technologies</h2>
+                <p>These web scraping projects demonstrate proficiency in various technologies and techniques:</p>
+                <div class="tech-summary">
+                    <div class="tech-category">
+                        <h4>Languages & Frameworks</h4>
+                        <ul>
+                            <li>Python with BeautifulSoup</li>
+                            <li>Requests for HTTP handling</li>
+                            <li>Pandas for data manipulation</li>
+                            <li>Flask for web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Data Processing</h4>
+                        <ul>
+                            <li>CSV export functionality</li>
+                            <li>Data visualization with Matplotlib</li>
+                            <li>Real-time data processing</li>
+                            <li>Error handling & validation</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Applications</h4>
+                        <ul>
+                            <li>E-commerce price monitoring</li>
+                            <li>Market research automation</li>
+                            <li>Product specification extraction</li>
+                            <li>Comparative analysis tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <h2>Explore Other Categories</h2>
+                <div class="cta-buttons">
+                    <a href="/services" class="cta-btn primary">All Projects</a>
+                    <a href="/github" class="cta-btn secondary">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

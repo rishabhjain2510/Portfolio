@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading - Rishabh Dev Jain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loading.css') }}">
+</head>
+<body>
+    <div class="loading-container">
+        <!-- Stone Black Background -->
+        <div class="stone-black-bg"></div>
+        
+        <!-- Loading Content -->
+        <div class="loading-content">
+            <div class="counter-display">
+                <span id="counter">0</span>
+            </div>
+            
+            <!-- Blinking Square -->
+            <div class="blinking-square" id="blinkingSquare"></div>
+            
+            <!-- Subtle Particles -->
+            <div class="minimal-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+</body>
+</html>

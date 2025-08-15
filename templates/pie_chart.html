@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Book Availability - Pie Chart{% endblock %}
+
+{% block content %}
+<section class="chart-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Book Availability Distribution</h1>
+            <p class="section-subtitle">Pie chart showing availability status of scraped books</p>
+        </div>
+
+        <div class="chart-controls">
+            <a href="{{ url_for('scrape_books') }}" class="chart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/>
+                </svg>
+                Back to Data
+            </a>
+            <a href="{{ url_for('bar_chart') }}" class="chart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z"/>
+                </svg>
+                Bar Chart
+            </a>
+        </div>
+
+        {% if chart_url %}
+        <div class="chart-container">
+            <img src="{{ chart_url }}" alt="Book Availability Pie Chart" class="chart-image">
+        </div>
+        {% else %}
+        <div class="no-chart">
+            <h3>Chart Not Available</h3>
+            <p>Please scrape data first to generate the chart</p>
+            <a href="{{ url_for('scrape_books') }}" class="scrape-btn primary">Scrape Data</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

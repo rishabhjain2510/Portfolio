@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Gaming Laptop Dataset{% endblock %}
+
+{% block content %}
+<section class="data-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Gaming Laptop Dataset</h1>
+            <p class="section-subtitle">High-performance gaming laptop specifications and market analysis</p>
+        </div>
+
+        <div class="data-controls">
+            <a href="{{ url_for('export_laptop_csv') }}" class="data-btn export">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                Export CSV
+            </a>
+            <a href="{{ url_for('gaming_mouse') }}" class="data-btn secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11,5H13V19H11V5M12,2A2,2 0 0,1 14,4A2,2 0 0,1 12,6A2,2 0 0,1 10,4A2,2 0 0,1 12,2Z"/>
+                </svg>
+                Gaming Mouse
+            </a>
+            <a href="/web_scraping" class="data-btn primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                </svg>
+                Back to Web Scraping
+            </a>
+        </div>
+
+        {% if tables %}
+        <div class="data-table-container">
+            <div class="table-wrapper">
+                {% for table in tables %}
+                    {{ table|safe }}
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <div class="no-data">
+            <h3>No Data Available</h3>
+            <p>Gaming Laptop CSV file not found</p>
+        </div>
+        {% endif %}
+
+        <div class="project-info">
+            <h3>About Gaming Laptop Dataset</h3>
+            <p>This comprehensive dataset includes gaming laptop specifications covering performance, pricing, and technical details for market research and comparison analysis.</p>
+            <ul>
+                <li>Hardware specifications (CPU, GPU, RAM, Storage)</li>
+                <li>Display characteristics and refresh rates</li>
+                <li>Performance benchmarks and scores</li>
+                <li>Price analysis and value propositions</li>
+                <li>Brand comparisons and market positioning</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

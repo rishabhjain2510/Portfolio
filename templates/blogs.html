@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Blogs - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<div class="page-section">
+    <div class="container">
+        <h1 class="page-title">Blogs</h1>
+        
+        <div class="content-card">
+            <div class="intro-section">
+                <p>Read my latest thoughts, tutorials, and insights on biotechnology, data analytics, and the intersection of biology and technology.</p>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="blogs-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="{{ url_for('static', filename='images/decoding-dna.png') }}" alt="The DNA of Modern Biotech" class="cover-photo">
+                    </div>
+                    <div class="blog-header">
+                        <h2 class="blog-title">The DNA of Modern Biotech: Why Python Is the Most Important Tool in the Lab</h2>
+                    </div>
+                    <div class="blog-content">
+                        <p>Biotech is no longer just about pipettes and petri dishes — it's also about Python scripts and data science. This article dives into how programming, especially Python, is reshaping modern biology. From DNA sequence analysis to data visualization, discover how coding is becoming the most essential tool in a biotechnologist;'s kit. Whether you're a student, researcher, or curious mind, it's time to bring code into the lab.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <a href="https://www.linkedin.com/posts/rishabh-dev-jain_biotech-is-no-longer-just-about-pipettes-activity-7352603718325817346-SUnM?utm_source=share&utm_medium=member_desktop" target="_blank" class="blog-link">
+                            Read Full Post
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="{{ url_for('static', filename='images/biopython.png') }}" alt="Biopython Gateway" class="cover-photo">
+                    </div>
+                    <div class="blog-header">
+                        <h2 class="blog-title">Biopython: Your Gateway to Bioinformatics Superpowers</h2>
+                    </div>
+                    <div class="blog-content">
+                        <p>"If biology is the language of life, then Biopython is the compiler."</p>
+                        
+                        <p>In a world where biology meets big data, one toolkit has been silently empowering bioinformaticians, biologists, and developers to decode the secrets of life at scale: Biopython.Whether you're a biologist who's curious about automation, a computer scientist intrigued by life sciences, or just someone wondering how Python fits into genomics — this post is for you.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <a href="https://www.linkedin.com/posts/rishabh-dev-jain_if-biology-is-the-language-of-life-then-activity-7354809730252333056-uk6G?utm_source=share&utm_medium=member_desktop" target="_blank" class="blog-link">
+                            Read Full Post
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Blog CTA Section -->
+            <div class="blog-cta">
+                <h2>Stay Updated</h2>
+                <p>Follow my journey in biotechnology, data analytics, and bioinformatics. Connect with me on LinkedIn for more insights and updates!</p>
+                <div class="connect-links">
+                    <a href="https://www.linkedin.com/in/rishabh-dev-jain/" target="_blank" class="connect-btn">Follow on LinkedIn</a>
+                    <a href="{{ url_for('about') }}" class="connect-btn secondary">Learn More About Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

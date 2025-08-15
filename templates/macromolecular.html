@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="content-card">
+            <div class="intro-section">
+                <h1 class="page-title">Power BI Projects</h1>
+                <p class="hook-text">Interactive dashboards and business intelligence solutions for biotechnology and molecular research</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured-dashboard">
+                    <div class="project-header">
+                        <h3 class="project-title">Macromolecular Structures Dashboard</h3>
+                        <div class="project-status">Featured</div>
+                    </div>
+                    
+                    <p class="project-description">
+                        A comprehensive Power BI dashboard analyzing macromolecular structures, experimental techniques, and molecular properties. Interactive visualizations explore protein classifications, research trends, and molecular characteristics across different structural types and pH ranges.
+                    </p>
+                    
+                    <div class="project-features">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">DAX</span>
+                        <span class="tech-tag">Data Modeling</span>
+                        <span class="tech-tag">Structural Biology</span>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <a href="/macromolecular_dashboard" class="project-btn primary">View Dashboard</a>
+                        <a href="/about" class="project-btn secondary">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <h2>Explore Other Categories</h2>
+                <div class="cta-buttons">
+                    <a href="/services" class="cta-btn primary">All Projects</a>
+                    <a href="https://www.linkedin.com/in/rishabh-dev-jain/" target="_blank" class="cta-btn secondary">Connect</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

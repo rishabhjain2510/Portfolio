@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="content-card">
+            <div class="intro-section">
+                <h1 class="page-title">My Projects</h1>
+                <p class="hook-text">Explore my work across four key areas of data and technology</p>
+            </div>
+            
+            <div class="services-grid">
+                <a href="/web_scraping" class="service-tile-link">
+                    <div class="service-tile">
+                        <div class="service-icon">🕸️</div>
+                        <h3 class="service-title">Web Scraping</h3>
+                        <p class="service-description">Projects focused on extracting and processing data from various websites and web sources.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Data Extraction</span>
+                            <span class="feature-tag">Web Automation</span>
+                            <span class="feature-tag">API Development</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="service-tile">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">Data Science</h3>
+                    <p class="service-description">Analytics and machine learning projects that uncover insights from complex datasets.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Statistical Analysis</span>
+                        <span class="feature-tag">Predictive Modeling</span>
+                        <span class="feature-tag">Data Visualization</span>
+                    </div>
+                </div>
+                
+                <a href="/macromolecular" class="service-tile-link">
+                    <div class="service-tile">
+                        <div class="service-icon">📈</div>
+                        <h3 class="service-title">Power BI</h3>
+                        <p class="service-description">Interactive dashboards and business intelligence solutions built with Microsoft Power BI.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Dashboard Design</span>
+                            <span class="feature-tag">Business Intelligence</span>
+                            <span class="feature-tag">Data Modeling</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="service-tile">
+                    <div class="service-icon">🤖</div>
+                    <h3 class="service-title">AI/Machine Learning</h3>
+                    <p class="service-description">Artificial intelligence and machine learning projects solving real-world problems.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Neural Networks</span>
+                        <span class="feature-tag">NLP Projects</span>
+                        <span class="feature-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <h2>Explore My Work</h2>
+                <p>Each category contains detailed projects with code, documentation, and real-world applications.</p>
+                <div class="cta-buttons">
+                    <a href="/about" class="cta-btn primary">Learn More</a>
+                    <a href="/github" class="cta-btn secondary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
